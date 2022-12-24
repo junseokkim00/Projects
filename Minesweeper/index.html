@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>💣 Minesweeper 💣</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+    <button type="button" class="theme">
+        🌙
+    </button>
+    <div class="buttons">
+        <button type="button" id="home">
+            🙂
+        </button>
+        
+    </div>
+    <div class="div-container" id="start-div">
+        <h1>Welcome to Minesweeper</h1>
+        <h3>Instructions</h3>
+        <ol class="instruction">
+            <li><strong>Left click</strong> to reveal the tiles</li>
+            <li><strong>Right click</strong> to put the flag over the tile </li>
+            <li>If you click the <strong>wrong tile</strong>, BOOM 🤯</li>
+            <li>If you put the flag over the <strong>plain tile</strong>, BOOM 🤯</li>
+            <li>If you want to play the game again, please <a>refresh</a> the page!</li>
+        </ol>
+        <div id="row-column-mines">
+            <div id="difficulty">
+                <a id="easy">Easy</a>
+                <a id="medium">Medium</a>
+                <a id="hard">Hard</a>
+            </div>
+            <p>rows: <input id="row" type="number" placeholder="9~30"> </p> 
+            <p>cols: <input id="col" type="number" placeholder="9~30"> </p> 
+            <p>mines: <input id="mines" type="number" placeholder="enter number"> </p> 
+        </div>
+        <p id="start-button">Start!</button>
+    </div>
+
+
+    <div class="div-container" id="game-div">
+        <h2 style="text-align: center;">
+            <span id="seconds">00</span>
+            :
+            <span id="tens">00</span>
+        </h2>
+
+        <h1 id="how-many">Mines Left: </h1>
+        <div class="board"></div>
+    </div>
+
+    <div class="div-container" id="Lose">
+        <h1>You Lose!!</h1>
+        
+    </div>
+
+    <div class="div-container" id="Win">
+        <h1>You Win!!</h1>
+    </div>
+</body>
+</html>
